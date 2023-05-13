@@ -18,7 +18,7 @@ Usage of ./build/celestia-node-exporter:
   -listen-address string
         Binary Listen address (default ":8000")
   -rpc-address string
-        Celesit Node RPC Address (default "http://localhost:26659")
+        Celesit Node API Address (default "http://localhost:26659")
   -timeout int
         Exporter Timeout Second When Calling Your Node (default 10)
   -v    show version
@@ -32,7 +32,7 @@ Usage of ./build/celestia-node-exporter:
 celestia-node-exporter --version
 
 # simple start
-celestia-node-exporter --rpc-address http://example.celestia-gateway-api.com:26659
+celestia-node-exporter --api-address http://example.celestia-gateway-api.com:26659
 
 # start with custom flags
 celestia-node-exporter \ 
