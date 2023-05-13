@@ -1,0 +1,11 @@
+groups:
+  - name: example-celestia-node-exporter-rules
+    rules:
+      - alert: celestia-node-exporter-is-not-normal
+        expr: increase(celestia_node_exporter_failed_counter[1m]) > 0
+        
+      - alert: celestia-node-is-halt
+        expr: increase(celestia_node_exporter_current_height[5m]) == 0
+
+      - alert: celestia-node-is-not-synced
+        expr: celestia_node_exporter_current_synctime_interval > 300
