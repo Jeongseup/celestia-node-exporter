@@ -34,6 +34,9 @@ celestia-node-exporter --version
 # simple start
 celestia-node-exporter --api-address http://example.celestia-gateway-api.com:26659
 
+# simple start in local 
+celestia-node-exporter --api-address http://localhost:26659
+
 # start with custom flags
 celestia-node-exporter \ 
     --timeout 5 \
